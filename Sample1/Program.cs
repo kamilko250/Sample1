@@ -14,6 +14,7 @@ namespace Sample1
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+            var c = 5;
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -22,5 +23,6 @@ namespace Sample1
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+        
     }
 }
